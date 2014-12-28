@@ -1,4 +1,4 @@
 andolog
 =======
 
-shell script, invented by ~ando at tilde.town
+shell script, created by ~ando at [tilde.town](http://www.tilde.town/~ando)
