@@ -1,7 +1,10 @@
 #!/bin/bash
 
-template_dir='./templates'
 html_dir='/var/www/'
+current_dir=$(pwd)
+entry_dir=$current_dir'/entries'
+template_dir=$current_dir'/entries/templates'
+cd $entry_dir
 
   # For each of the files with the extension .md in the directory
   for file in *.md; do
