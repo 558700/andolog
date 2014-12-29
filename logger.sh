@@ -18,7 +18,7 @@
       echo -e "$newlog\n" >> $log_file
       echo -e "$logdata" >> $log_file
       echo "logged and..." # (log confirmation dialogue)
-      echo $(bash publisher.sh)
+      echo $(bash $ando_dir/publisher.sh)
   else
       echo "not logged, without data" # (log failure dialogue)
   fi
