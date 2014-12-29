@@ -18,7 +18,6 @@ cd $entry_dir
       markdown $file >> $html_dir/$html
       # Read the contents of the footer and append to the html.
       cat $template_dir/footer.html >> $html_dir/$html
-
-      echo $html
+      printf "published $html // "
       done
-
+echo "どうもありがとう ～アンド"

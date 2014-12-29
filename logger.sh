@@ -23,9 +23,9 @@
       echo -e "**$(date --rfc-3339=seconds)**\n" >> $log_file
       echo -e "$newlog\n" >> $log_file
       echo -e "$logdata" >> $log_file
-
-      echo "don't forget to publish"
+      echo "logged and..."
+      echo $(bash publisher.sh)
   else
-      echo "no data"
+      echo "not logged, without data"
   fi
 
