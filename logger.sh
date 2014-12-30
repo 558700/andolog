@@ -1,7 +1,7 @@
   #!/bin/bash
 
   # configure the commented lines below. (brackets optional)
-  ando_dir='/home/ive/andolog' # path to andolog file (run $pwd to find this) 
+  ando_dir='/home/ive/andolog' # path to andolog file (run $pwd to find this)
   entries_dir=$ando_dir'/entries'
   temp_file=$entries_dir'/templog.md'
   log_file=$entries_dir'/log.md'
@@ -10,8 +10,8 @@
 
   nano $temp_file
   if [ -f $temp_file ]; then
+      python tags.py
       newlog=$(cat $temp_file)
-      # tag assignment might go here
       rm $temp_file
       logdata=$(grep -v "^$header" $log_file)
       echo -e "$header\n" > $log_file
