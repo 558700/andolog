@@ -4,7 +4,7 @@
   ando_dir='/home/ive/andolog' # path to andolog file (run $pwd to find this)
   entries_dir=$ando_dir'/entries'
   temp_file=$entries_dir'/templog.md'
-  log_file=$entries_dir'/log.md'
+  log_file=$entries_dir'/index.md'
 
   header="# ~log" # (the header at the top of the log)
 
