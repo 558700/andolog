@@ -11,6 +11,7 @@
   nano $temp_file
   if [ -f $temp_file ]; then
       newlog=$(cat $temp_file)
+      # tag assignment might go here
       rm $temp_file
       logdata=$(grep -v "^$header" $log_file)
       echo -e "$header\n" > $log_file
