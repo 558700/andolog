@@ -1,16 +1,16 @@
-tags=[ '#tag1', '#amet']
+# takes temp_file input
+entry = 'Lorem ipsum dolor tag' # this will be a variable in future
+input_tags = raw_input("> any tags? >") # prompt on cli for tags
 
-entry = 'Lorem ipsum dolor tag #amet #tag1'
+input_tags = str(input_tags) # stringifyes input
+tags = input_tags.split() # lists inputs
 
+for tag in tags: # for each tag entered: 
+	html_tag = '<a class=\'' + tag + '\'>' + '#' +  tag + '</a>' # htmlifies tag
+	entry = entry + " " + html_tag # appends to entry
 
-for tag in tags:
-	print tag
-	word_tag = tag[1:]
-	print "word tag is " + word_tag
-	html_tag = '<a id=\'' + word_tag + '\'>' + tag + '</a>'
-	print "html tag is " + html_tag
-	entry = entry.replace(tag, html_tag)
+# needs to return to seperate tagged file: /var/www/log/tags/
 
-print "printing replaced entry variable"
-print entry
+print "printing replaced entry variable" # debug text
+print entry #returns entry
 
