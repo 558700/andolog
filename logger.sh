@@ -2,15 +2,15 @@
 
   # configure the commented lines below. (brackets optional)
   ando_dir='/home/ive/andolog' # path to andolog file (run $pwd to find this)
+  tags_file=$ando_dir'/tags.py'
   entries_dir=$ando_dir'/entries'
   temp_file=$entries_dir'/templog.md'
   log_file=$entries_dir'/index.md'
-
   header="# ~log" # (the header at the top of the log)
 
   nano $temp_file
   if [ -f $temp_file ]; then
-      python tags.py
+      python $tags_file
       newlog=$(cat $temp_file)
       rm $temp_file
       logdata=$(grep -v "^$header" $log_file)
