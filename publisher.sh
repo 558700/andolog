@@ -2,7 +2,7 @@
 
 # configure the commented variables below
 
-html_dir='/var/www/' # directory to which log.html should be output
+html_dir='/var/www/log/' # directory to which index.html should be output
 ando_dir='/home/ive/andolog' # path to andolog file (run $pwd in file)
 entry_dir=$ando_dir'/entries'
 template_dir=$ando_dir'/entries/templates'
