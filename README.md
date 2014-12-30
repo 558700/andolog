@@ -27,4 +27,4 @@ it uses [markdown.bash](https://github.com/chadbraunduin/markdown.bash) to conve
 
 	$ sudo /path/to/andolog/ bash logger.sh
 
-(5.) (configure the variable html_dir to whichever directory you would like log.html to output to)
+5. configure the variable html_dir to whichever directory you would like log.html to output to. make sure to copy the enclosed copy of jquery to whichever file that is.
