@@ -12,10 +12,12 @@
 
 =======
 
-shell script, created by ~ando at [tilde.town](http://www.tilde.town/~ando)
+__shell script, created by ~ando at [tilde.town](http://www.tilde.town/~ando)__
 
 it uses [markdown.bash](https://github.com/chadbraunduin/markdown.bash) to convert a markdown entry into html.
-~ ~ installation ~ ~ 
+
+
+## ~ ~ installation ~ ~ 
 
 1. clone the repo where you want it
 2. clone markdown.bash [from here](https://github.com/chadbraunduin/markdown.bash)
